@@ -33,3 +33,6 @@ def gen_dataset(circuit_count: int, qubit_count: int, gate_count: int, gate_set:
     return output
 
 data = gen_dataset(10, 5, 12, [HGate(), SGate(), TGate(), CXGate()])
+
+plot_histogram(data)
+plt.show()
